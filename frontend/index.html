@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Loan Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Business Loan Application</h1>
+        <form id="applicationForm">
+            <label for="business_name">Business Name</label>
+            <input type="text" id="business_name" name="business_name" required>
+            
+            <label for="year_established">Year Established</label>
+            <input type="number" id="year_established" name="year_established" required>
+            
+            <label for="loan_amount">Loan Amount</label>
+            <input type="number" id="loan_amount" name="loan_amount" required>
+            
+            <label for="accounting_provider">Accounting Provider</label>
+            <select id="accounting_provider" name="accounting_provider" required>
+                <option value="Xero">Xero</option>
+                <option value="MYOB">MYOB</option>
+            </select>
+            
+            <button type="button" onclick="startApplication()">Submit Application</button>
+        </form>
+        
+        <div id="result">
+            <h2>Application Result</h2>
+            <p id="businessDetails"></p>
+            <p id="preAssessment"></p>
+            <p id="decisionOutcome"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
